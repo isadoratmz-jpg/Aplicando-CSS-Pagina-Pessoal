@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Isadora</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="apresentacao" class="secao">
+            <h2>Quem sou eu</h2>
+            <img src="img/foto.jpg" alt="Foto pessoal" class="foto" width="200" height="200">
+            <p>
+                Olá! Sou estudante do curso Técnico em Informática para Internet
+                no IF Sudeste MG - Campus Barbacena. Estou aprendendo a criar
+                páginas web com HTML e CSS.
+            </p>
+        </section>
+
+        <section id="interesses" class="secao">
+            <h2>Meus interesses</h2>
+            <ul class="lista-interesses">
+                <li>Programação web</li>
+                <li>Design de interfaces</li>
+                <li>Música</li>
+                <li>Filmes e séries</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="secao secao-contato">
+            <h2>Entre em contato</h2>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sua mensagem</legend>
+
+                    <div class="campo">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem" required></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="botoes">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Isadora - IF Sudeste MG, Campus Barbacena</p>
+        <p><a href="#apresentacao">Voltar ao topo</a></p>
+    </footer>
+
+</body>
+</html>
